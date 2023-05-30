@@ -3,8 +3,8 @@ package Model;
 import java.util.ArrayList;
 import java.util.List;
 public class MyTree <T>{
-    int size;
-    MyNode<T> header;
+    private int size;
+    private MyNode<T> header;
     private class MyNode <G> {
         private G value;
         private MyNode<G> parent;
@@ -15,5 +15,21 @@ public class MyTree <T>{
             this.parent = parent;
             this.childrenList = new ArrayList<>();
         }
+    }
+
+    public int getSize() {
+        return size;
+    }
+
+    public void setSize(int size) {
+        this.size = size;
+    }
+
+    public MyNode<T> getHeader() {
+        return header;
+    }
+
+    public void setHeader(MyNode<T> header) {
+        this.header = header;
     }
 }
