@@ -1,8 +1,11 @@
-import View.WindowApplication;
+import Presenter.Presenter;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        WindowApplication windowApplication = new WindowApplication();
-        windowApplication.launchFrame();
+        Presenter presenter = new Presenter();
+        ArrayList
     }
 }

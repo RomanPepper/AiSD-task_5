@@ -2,9 +2,10 @@ package Model;
 
 import java.util.ArrayList;
 import java.util.List;
-public class MyTree <T>{
+public class Tree<T>{
     private int size;
     private MyNode<T> header;
+
     private class MyNode <G> {
         private G value;
         private MyNode<G> parent;

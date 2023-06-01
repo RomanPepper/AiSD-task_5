@@ -8,6 +8,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Objects;
 
 
 public class WindowApplication extends Application {
@@ -27,7 +28,7 @@ public class WindowApplication extends Application {
         Parent root = loader.load();
 
         Scene scene = new Scene(root);
-        scene.getStylesheets().add(getClass().getResource("/View/CSS/styles.css").toExternalForm());
+        scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("/View/CSS/styles.css")).toExternalForm());
         stage.setScene(scene);
 
         stage.show();
