@@ -1,11 +1,11 @@
-import Presenter.Presenter;
+import Model.PathTree;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class Main {
     public static void main(String[] args) {
-        Presenter presenter = new Presenter();
-        ArrayList
+        PathTree pathTree = new PathTree();
+        pathTree.buildFromPath(Paths.get("C:\\Users\\Username\\Desktop\\testFile.txt"));
     }
 }

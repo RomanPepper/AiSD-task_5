@@ -1,5 +1,7 @@
 package Model;
 
-public interface CanDisplayPath {
+import java.nio.file.Path;
 
+interface CanDisplayPath {
+    void buildFromPath(Path path);
 }
